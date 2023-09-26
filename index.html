@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="weather-icons.css">
+
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <div class="location">
+            <input type="text" id="location-input" placeholder="Enter location">
+            <button id="search-button">Search</button>
+            <button id="use-location-button">Use My Location</button>
+
+            <div id="city-name"></div> <!-- Add this div for displaying the city name -->
+        </div>
+        
+        <div class="unit-switch">
+            <label for="unit-select">Units:</label>
+            <select id="unit-select">
+                <option value="metric">Celsius</option>
+                <option value="imperial">Fahrenheit</option>
+            </select>
+        </div>
+        <div class="weather-info">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+            <p id="visibility"></p>
+            <p id="city-name"></p> <!-- Add this element for displaying the city name -->
+            <p id="date-time"></p> <!-- Add this element for displaying the date and time -->
+            <i id="weather-icon" class=""></i>
+        </div>
+       
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

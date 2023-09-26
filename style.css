@@ -1,0 +1,207 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-image 0.5s;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.weather-container {
+    background: linear-gradient(to bottom, #3498db, #1abc9c);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.location {
+    margin-top: 20px;
+}
+
+#location-input {
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#location-input:focus {
+    border-color: #1abc9c;
+}
+
+#search-button:hover {
+    background-color: #1abc9c;
+}
+
+.unit-switch {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.unit-switch label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.unit-switch select {
+    padding: 5px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+.unit-switch select:focus {
+    border-color: #1abc9c;
+}
+
+.weather-info {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.weather-info p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+
+/* Background styles for different weather conditions */
+.clear {
+    background-image: url('./images/clear.jpg');
+    background-size: cover;
+    /* Add more styles as needed */
+}
+
+.rain {
+    background-image: url('./images/rainy.jpg');
+    background-size: cover;
+    /* Add more styles as needed */
+}
+
+.snow {
+    background-image: url('./images/snow.jpg');
+    background-size: cover;
+    /* Add more styles as needed */
+}
+
+.clouds {
+    background-image: url('./images/cloudy.jpg');
+    background-size: cover;
+    /* Add more styles as needed */
+}
+
+.thunderstorm {
+    background-image: url('./images/thunderstorm.jpg');
+    background-size: cover;
+    /* Add more styles as needed */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#weather-icon {
+    font-size: 60px;
+    color: #3498db; /* Match the primary color */
+}
+
+/* CSS for the "Use My Location" button */
+#use-location-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#use-location-button:hover {
+    background-color: #1abc9c;
+}
+
+#city-name {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+    margin-top: 10px; /* Add some top margin for spacing */
+    text-align: center; /* Center-align the text */
+    color: #333; /* Set the text color */
+}
+
+/* Center the "location" container */
+.location {
+    text-align: center;
+}
+
+/* Style for the buttons */
+#search-button,
+#use-location-button {
+    background-color: #007BFF; /* Set the button background color */
+    color: white; /* Set the text color */
+    padding: 10px 20px; /* Add padding to the buttons */
+    border: none; /* Remove the button border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    margin: 5px; /* Add some margin between the buttons */
+}
+
+/* Style for the button hover effect */
+#search-button:hover,
+#use-location-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
+
+body.weather-condition-Clear {
+    background-image: url(./images/clear.jpg);
+}
+
+body.weather-condition-Clouds {
+    background-image: url(./images/cloudy.jpg);
+}
+
+body.weather-condition-Rain {
+    background-image: url(./images/rainy.jpg);
+}
+.sunny {
+    background-image: url('./images/sunny.jpg');
+    background-size: cover;
+    /* Add more styles as needed */
+}
